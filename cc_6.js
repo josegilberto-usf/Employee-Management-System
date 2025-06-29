@@ -1,4 +1,4 @@
-// Step 2: Employee Class
+// Step 2: Employee Class representing an employee
 class Employee {
     constructor(name, department) {
         this.name = name;
@@ -10,7 +10,7 @@ class Employee {
     }
 }
 
-// Step 3: Manager SubClass
+// Step 3: Manager Class extending Employee
 class Manager extends Employee {
     constructor(name, department, teamSize) {
         super(name, department);
@@ -30,7 +30,7 @@ const employees = [
     new Manager("Diana", "Sales", 10)
 ];
 
-// Step 5: Company Class
+// Step 5: Company Class to manage employees
 class Company {
     constructor() {
         this.employees = [];
